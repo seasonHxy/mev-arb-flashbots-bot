@@ -1,0 +1,37 @@
+{
+    "name": "mev-arbitrage-bot",
+    "version": "1.0.0",
+    "description": "Flashbots-protected memecoin arbitrage bot with SQLite + frontend viewer",
+    "main": "src/bot/listenSwap.ts",
+    "scripts": {
+      "dev": "ts-node src/bot/listenSwap.ts",
+      "export:json": "ts-node scripts/exportHistory.ts json",
+      "export:csv": "ts-node scripts/exportHistory.ts csv"
+    },
+    "keywords": [
+      "MEV",
+      "Flashbots",
+      "Arbitrage",
+      "Uniswap",
+      "Crypto",
+      "Bot",
+      "DeFi"
+    ],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+      "@ethersproject/providers": "^5.7.2",
+      "@ethersproject/units": "^5.7.0",
+      "@flashbots/ethers-provider-bundle": "^0.16.2",
+      "@uniswap/v2-core": "^1.0.1",
+      "@uniswap/v2-periphery": "^1.1.0-beta.0",
+      "better-sqlite3": "^8.3.0",
+      "dotenv": "^16.3.1",
+      "ethers": "^6.11.0"
+    },
+    "devDependencies": {
+      "ts-node": "^10.9.2",
+      "typescript": "^5.4.5"
+    }
+  }
+  
