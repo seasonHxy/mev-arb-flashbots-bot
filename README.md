@@ -25,8 +25,5 @@ ts-node src/bot/listenSwap.ts
 4. Export history:
 ts-node scripts/exportHistory.ts csv
 
-5.View frontend:
-
-
 
 ```
